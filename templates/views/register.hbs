@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!-- navbar  -->
+
+
+    {{>nav}}
+   
+
+
+    <!-- body part  -->
+
+    <div>
+        <div class="container bg-blue-300 px-6 py-3 my-10 flex justify-evenly mx-auto w-2/3">
+            <!-- left part -->
+            <div class="flex flex-col justify-center items-center">
+                <p class="text-xl font-semibold">Mern Developer</p>
+                <p class="text-lg">Learning continuous</p>
+                <p class="text-lg">Dont Stop</p>
+            </div>
+
+            <!-- right part  -->
+            <div class="flex flex-col">
+                <p class="text-xl font-semibold mb-3">Registeration form</p>
+
+                <form action="/register" method="POST">
+                 <div class="flex space-x-6 my-4">
+                    <input type="text" placeholder="first name" name="firstname" class="border-2 border-gray-500 rounded-lg">
+                    <input type="text" placeholder="last name" name="lastname" class="border-2 border-gray-500 rounded-lg">
+                </div>
+
+                <div class="flex space-x-6 my-4">
+                    <input type="email" name="email" id="email" placeholder="email" class="rounded-lg border-2 border-gray-500">
+                    <input type="number" name="age" id="age" placeholder="age" class="rounded-lg border-2 border-gray-500">
+
+                </div>
+
+                <div class="radio">
+                    <label class="radio inline">
+                        <input type="radio" name="gender" value="male" checked>
+                        <Span>Male</Span>
+                    </label>
+
+                    <label class="radio inline">
+                        <input type="radio" name="gender" value="Female" checked>
+                        <Span>Female</Span>
+                    </label>
+                </div>
+
+                <div class="password flex space-x-6 my-4">
+                    <input type="password" name="password" id="password" placeholder="password" class="rounded-lg border-2 border-gray-500">
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password" class="rounded-lg border-2 border-gray-500">
+
+                    
+
+                </div>
+
+
+
+                <button type="submit" class="bg-green-400 px-3 py-2 rounded-lg w-20 ml-80">Submit</button>
+
+                </form>
+
+               
+
+
+                
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
